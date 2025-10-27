@@ -1,28 +1,60 @@
 import React from "react";
-
+import vox from './vox.png'
+import agri from './agri.png'
+import port from './port.png'
+import sat from './sat.png'
+import quick from './quick.png'
+import backup from './backup.png'
 const projects = [
   {
     id: 1,
-    title: "Inboxly - Mail Management System",
-    image: "https://i.imgur.com/D3N4NnL.png",
+    title: "AgriConnect - AI Farm Guide",
+    image: `${agri}`,
     description:
-      "A full-stack MERN application for managing mails efficiently with real-time communication, authentication, and cloud deployment.",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind"],
-    github: "https://github.com/shivamkasaudhan/Inboxly-Mail-Service",
+      "An AI-powered multilingual farm guide built with React and MongoDB to help farmers get instant crop insights in 10 Indian languages.",
+    techStack: ["React", "Express","Node", "MongoDB", "OpenAI API", "Tailwind"],
+    github: "https://github.com/shivamkasaudhan/Agri-Connect",
   },
   {
     id: 2,
-    title: "AgriConnect - AI Farm Guide",
-    image: "https://i.imgur.com/fzmGBHR.png",
+    title: "SAT - Order Scheduling Website",
+    image: `${sat}`,
     description:
-      "An AI-powered multilingual farm guide built with React and MongoDB to help farmers get instant crop insights in 10 Indian languages.",
-    techStack: ["React", "Express", "MongoDB", "OpenAI API", "Tailwind"],
-    github: "https://github.com/shivamkasaudhan/AgriConnect",
+      "Built SAT – Order Scheduling Website to streamline order management and scheduling with an intuitive interface and efficient backend integration.",
+    techStack: ["React", "Express", "MongoDB Atlas","Node","Tailwind"],
+    github: "https://github.com/shivamkasaudhan/sat",
   },
   {
     id: 3,
+    title: "AWSS3-Dataset-Visualization",
+    image: `${quick}`,
+    description:
+      "Created data visualization using Amazon S3 and Amazon Quicksight, Working with large dataset of best-selling Amazon products.",
+    techStack: ["AWS S3", "AWS QuickSight", "Dataset","Visualization"],
+    github: "https://github.com/shivamkasaudhan/AWSS3-Dataset-Visualization",
+  },
+  {
+    id: 4,
+    title: "AWS-EC2-Backup-Automation",
+    image: `${backup}`,
+    description:
+      "This project automates daily backups of a specified directory using a shell script and rsync, with logging for both success and failure outcomes, and integrates email notifications for backup status.",
+    techStack: ["AWS S3","AWS EC2","Shell Script","Rsync","Cron-job","Linux"],
+    github: "https://github.com/shivamkasaudhan/AWS-EC2-Backup-Automation",
+  },
+  {
+    id: 5,
+    title: "Personal Portfolio",
+    image: `${port}`,
+    description:
+      "Developed a responsive personal portfolio website to showcase projects, skills, and achievements with a modern UI using React and Tailwind CSS.",
+    techStack: ["React", "EmailJS","Tailwind"],
+    github: "https://github.com/shivamkasaudhan/personal-portfolio",
+  },
+  {
+    id: 6,
     title: "VOX - Voice Assistant",
-    image: "https://i.imgur.com/ILf6u9F.png",
+    image: `${vox}`,
     description:
       "A Python-based voice assistant that can perform system tasks, answer questions, and automate workflows with a natural voice interface.",
     techStack: ["Python", "SpeechRecognition", "Pyttsx3", "APIs"],

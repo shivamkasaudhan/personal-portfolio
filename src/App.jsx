@@ -34,7 +34,7 @@ const App = () => {
             to="/"
             className="text-2xl font-bold bg-linear-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent"
           >
-            Shivam<span className="font-light text-gray-600 dark:text-gray-400">.dev</span>
+            Shivam<span className="font-light text-gray-600 dark:text-gray-400"> Kasaudhan</span>
           </Link>
 
           <div className="flex items-center space-x-6">

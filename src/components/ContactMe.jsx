@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaMedium, FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { send } from "@emailjs/browser";
-import toast from "react-hot-toast"; // ✅ Import toast
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -25,12 +25,12 @@ const Contact = () => {
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
       .then(() => {
-        toast.success("Message sent successfully!"); // ✅ Toast instead of alert
+        toast.success("Message sent successfully!"); 
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((err) => {
         console.error(err);
-        toast.error("Oops! Something went wrong."); // ✅ Toast for error
+        toast.error("Oops! Something went wrong."); 
       });
   };
 
@@ -43,12 +43,12 @@ const Contact = () => {
       {/* Social Links */}
       <div className="flex flex-wrap justify-center gap-8 mb-16">
         {[
-          { icon: <FaLinkedin className="text-3xl text-blue-600" />, link: "https://www.linkedin.com/in/shivamkasaudhan" },
+          { icon: <FaLinkedin className="text-3xl text-blue-600" />, link: "https://www.linkedin.com/in/shivamkasaudhan_" },
           { icon: <FaGithub className="text-3xl text-gray-800 dark:text-gray-100" />, link: "https://github.com/shivamkasaudhan" },
           { icon: <FaMedium className="text-3xl text-black dark:text-white" />, link: "https://medium.com/@shivamkasaudhan" },
           { icon: <FaInstagram className="text-3xl text-pink-500" />, link: "https://www.instagram.com/shivamkasaudhan" },
-          { icon: <FaXTwitter className="text-3xl text-black dark:text-white" />, link: "https://x.com/shivamkasaudhan" },
-          { icon: <SiLeetcode className="text-3xl text-yellow-500" />, link: "https://leetcode.com/shivamkasaudhan" },
+          { icon: <FaXTwitter className="text-3xl text-black dark:text-white" />, link: "https://x.com/shivamdetox" },
+          { icon: <SiLeetcode className="text-3xl text-yellow-500" />, link: "https://leetcode.com/shivam_kasaudhan" },
         ].map((social, idx) => (
           <a
             key={idx}

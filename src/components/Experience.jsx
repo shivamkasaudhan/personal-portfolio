@@ -3,7 +3,15 @@ import React from "react";
 const experiences = [
   {
     id: 1,
-    role: "Web Development Intern",
+    role: "Assistant System Engineer",
+    company: "Tata Consultancy Services",
+    duration: "Upcoming",
+    description:
+      "",
+  },
+  {
+    id: 1,
+    role: "Web Development intern",
     company: "ConnektSphere",
     duration: "Oct 2025 – Present",
     description:
@@ -11,28 +19,35 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Full Stack Developer (Freelance)",
-    company: "AgriConnect Project",
-    duration: "Apr 2025 – Aug 2025",
+    role: "Web Developer Intern",
+    company: "Klyint.in",
+    duration: "Oct 2025 – Present",
     description:
-      "Developed an AI-powered multilingual farm guide using MERN stack and OpenAI API. Migrated database from Firebase to MongoDB for better scalability and performance.",
+      "Hands-on Experience based Internship",
   },
   {
     id: 3,
-    role: "Backend Developer & Team Lead",
-    company: "Inboxly Mail Service",
-    duration: "Jan 2025 – Mar 2025",
+    role: "AgriConnect Project",
+    company: "Personal Project",
+    duration: "Apr 2024 – Aug 2025",
     description:
-      "Built backend architecture using Express.js, JWT, and MongoDB. Enhanced authentication, integrated real-time features, and managed version control with Git and Render deployment.",
+      " Developed frontend with React.JS, robust backend with Node.JS and Express.JS, and optimized data management with MongoDB, enhancing system performance. Spearheaded backend development, version control, and research, implementing a multilingual AI-powered Farm Guide supporting 10 major Indian languages. Engineered a platform enabling direct crop sales and organic products, curated educational content in 3 languages.",
   },
   {
     id: 4,
-    role: "AWS Automation Developer",
+    role: "AWS Backup Automation",
     company: "Personal Project",
-    duration: "Sep 2024 – Nov 2024",
+    duration: "Nov 2024",
     description:
-      "Automated daily EC2 backups using Bash, rsync, and cron. Configured email notifications and improved system efficiency through process monitoring and mail queue optimization.",
+      `Automated daily AWS EC2 backups using shell scripting, rsync, and cron jobs with real-time email alerts via Postfix for success or failure notifications.`,
   },
+  {
+    id: 5,
+    role: "Open Source Contribution",
+    company: "Hacktoberfest",
+    duration: "Oct 2024",
+    description:"Successfully contributed to Hacktoberfest 2023 with 4 pull requests merged across cross-platform open-source repositories, fixing bugs, and enhancing code modularity."
+  }
 ];
 
 const Experience = () => {
@@ -53,9 +68,8 @@ const Experience = () => {
               className={`relative flex ${index % 2 === 0 ? "justify-start" : "justify-end"} w-full`}
             >
               <div
-                className={`bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl border border-gray-200 dark:border-gray-700 p-6 rounded-2xl shadow-lg transform hover:scale-[1.03] hover:shadow-cyan-300/40 dark:hover:shadow-cyan-500/40 transition duration-300 ease-out w-[90%] md:w-[45%] ${
-                  index % 2 === 0 ? "ml-0" : "mr-0"
-                }`}
+                className={`bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl border border-gray-200 dark:border-gray-700 p-6 rounded-2xl shadow-lg transform hover:scale-[1.03] hover:shadow-cyan-300/40 dark:hover:shadow-cyan-500/40 transition duration-300 ease-out w-[90%] md:w-[45%] ${index % 2 === 0 ? "ml-0" : "mr-0"
+                  }`}
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
                   {exp.role}

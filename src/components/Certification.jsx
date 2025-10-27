@@ -1,28 +1,39 @@
+import { title } from "motion/react-client";
 import React from "react";
-
+import AWS from './aws.png'
+import gcp from './gcp.png'
+import meta from './meta.png'
+import nptel from './nptel.png'
 const certifications = [
   {
     id: 1,
     title: "Meta Front-End Developer Professional Certificate",
-    image: "https://i.imgur.com/NJ2Jp3H.png",
-    skills: ["React", "JavaScript", "HTML", "CSS", "Git", "UX Design"],
+    image: `${meta}`,
+    skills: ["React", "JavaScript", "HTML", "CSS", "Git", "UX Design","Tailwind CSS","Node"],
     verifyLink:
-      "https://www.coursera.org/account/accomplishments/professional-cert/ABC123",
+      "https://www.coursera.org/account/accomplishments/verify/MBBCUKA2FELY",
   },
   {
     id: 2,
     title: "AWS Cloud Practitioner",
-    image: "https://i.imgur.com/ok6s9rA.png",
-    skills: ["AWS EC2", "S3", "IAM", "Lambda", "Cloud Basics"],
-    verifyLink: "https://aws.amazon.com/verification-link",
+    image: `${AWS}`,
+    skills: ["Amazon EC2", "Lambda", "S3", "RDS", "DynamoDB", "VPC",  "IAM","Cloud Watch"],
+    verifyLink: "https://www.credly.com/badges/eb33a6db-a5b7-4c5b-9cdb-d7874a5f413f/public_url",
   },
   {
     id: 3,
-    title: "HackerRank SQL (Intermediate)",
-    image: "https://i.imgur.com/xgV7GxI.png",
-    skills: ["SQL", "Joins", "Aggregations", "Subqueries"],
-    verifyLink: "https://www.hackerrank.com/certificates/verify/XYZ789",
+    title: "Google Cloud Digital Leader",
+    image: `${gcp}`,
+    skills: ["Compute Engine", "App Engine", "Cloud Functions", "Cloud Run", "Cloud Storage", "BigQuery"],
+    verifyLink: "https://www.linkedin.com/in/shivamkasaudhan/details/certifications/1707585503062/single-media-viewer/?type=DOCUMENT&profileId=ACoAAEBFkekBM7Tba4lxIYQnGY3aHdh-zF3DuRg",
   },
+  {
+    id:4,
+    title:"NPTEL Cloud Computing",
+    image:`${nptel}`,
+    skills:["Virtualization", "IaaS", "PaaS", "SaaS", "Security", "Cloud Storage", "Edge Computing", "Fog Computing"],
+    verifyLink:"https://drive.google.com/file/d/1zR2-rJwLkRBoFeqO9kQ2j78MgpxLxy1m/view"
+  }
 ];
 
 const Certifications = () => {
