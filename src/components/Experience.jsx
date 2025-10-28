@@ -45,7 +45,7 @@ const experiences = [
     id: 5,
     role: "Open Source Contribution",
     company: "Hacktoberfest",
-    duration: "Oct 2024",
+    duration: "Oct 2023",
     description:"Successfully contributed to Hacktoberfest 2023 with 4 pull requests merged across cross-platform open-source repositories, fixing bugs, and enhancing code modularity."
   }
 ];
